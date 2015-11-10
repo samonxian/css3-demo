@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Description" content="css3属性大全，css3属性解说" />
+		<meta name="Keywords" content="css3,position" />
+		<meta name="viewport" content="width=320,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>position</title>
+		<meta name="author" content="Sam,xianshannan@qq.com" />
+		<style>
+			html,body{
+				margin:0;
+				padding:0;
+			}
+			body{
+				background-color:#ccc;
+				font-size:14px;
+				height:900px;
+			}
+			div{
+				line-height:40px;
+				overflow-x:auto;
+				white-space: nowrap;
+				z-index:10;
+			}
+			.static {
+				width:70%;
+				margin:0 auto;居中
+				top: 50%;//无效
+				height: 40px;
+				padding: 0 3%;
+				background: #eee;
+			}
+			.relative {
+				position: relative;
+				width: 70%;
+				height: 40px;
+				left:50%;
+				margin:0 0 0 -38%;
+				padding: 0 3%;
+				background: #000;
+				color:#fff;
+			}
+			/*不设置top*/
+			.absolute1 {
+				position: absolute;
+				width: 70%;
+				height: 40px;
+				left:50%;
+				margin:0 0 0 -38%;
+				padding: 0 3%;
+				background: red;
+				color:#fff;
+			}
+			/*设置top*/
+			.absolute2 {
+				position: absolute;
+				width: 70%;
+				height: 40px;
+				left:50%;
+				top:120px;
+				margin:0 0 0 -38%;
+				padding: 0 3%;
+				background: green;
+				color:#fff;
+			}
+			.relative-absolute-con{
+				position: relative;
+				width: 70%;
+				height: 40px;
+				left:50%;
+				margin:0 0 0 -38%;
+				padding: 0 3%;
+				background: blue;
+				color:#fff;
+				top:80px;
+				height:100px;
+			}
+			.absolute3 {
+				position: absolute;
+				width: 70%;
+				height: 40px;
+				left:50%;
+				top:50%;
+				margin:-20px 0 0 -38%;
+				padding: 0 3%;
+				background: red;
+				color:#fff;
+			}
+			.fixed{
+				position: fixed;
+				width: 70%;
+				height: 40px;
+				padding: 0 3%;
+				background: yellow;
+				margin:0 0 0 -38%;
+				left:50%;
+				color:#000;
+				z-index:1000;
+				bottom:0;
+				z-index: 0;
+			}
+			.z-index{
+				z-index: 1000;
+				bottom:20px;
+			}
+			.clip{
+				clip: rect(0 auto 35px 10px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="static">Static ： 查看元素对比</div>
+		<div class="relative">Relative,参考位置:当前(是指以static元素为参考)</div>
+		<div class="absolute1">Absolute,无top时,参考位置:当前</div>
+		<div class="absolute2">Absolute,有top,参考位置:窗口(父辈元素无relative)</div>
+		<div class="relative-absolute-con">
+			<div class="absolute3">Absolute,父辈元素relative</div>
+		</div>
+		<div class="relative clip" style="top:80px;"> 
+			relative clip 滚动下去看看~
+		</div>
+		<div class="absolute1 clip " style="bottom:60px;">Absolute clip(剪切只在absolute、fixed生效)</div>
+		<div class="fixed z-index">fixed z-index（叠成设置，值大的在上面，不是设置不产生叠成）</div>
+		<div class="fixed">fixed</div>
+	</body>
+</html>
