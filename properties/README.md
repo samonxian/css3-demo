@@ -1,5 +1,5 @@
 ##语法
-**position**：`static` | `relative` | `absolute` | `fixed`</br>
+**Position**：`static` | `relative` | `absolute` | `fixed`</br>
 默认值_：`static`</br>
 适用于：除`display`属性定义为 `table-column-group` 和 `table-column`之外的所有元素</br>
 继承性：无</br>
