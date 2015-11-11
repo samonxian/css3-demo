@@ -1,6 +1,10 @@
 module.exports = function(grunt){
 	grunt.initConfig({
-		path : '../../svn/demo.hkoudai.com/',
+		src_config: {
+			cwd: 'src/',
+			src: '**/*',
+			dist: 'temp_build/'
+		},
 		jshint: {
 			options: {
 				//大括号包裹
@@ -38,7 +42,7 @@ module.exports = function(grunt){
 			]
 		},
 		compass : {
-			dist: {                   
+			sass: {                   
 				options: {            
 					sassDir: 'style/scss',
 					cssDir: 'style/css',
@@ -47,28 +51,105 @@ module.exports = function(grunt){
 		},
 		uglify: {
 			minjs: {
-				src: ['style/js/*.js'],
-				dest: 'temp/js/*.min.js',
-			},
-			mincss: {
-				src: ['style/css/*.css'],
-				dest: ['temp/css/*.css'],
+				files: [{
+					expand : true,
+					cwd : 'style/js',
+					src : '**/*.js',
+					dest : 'temp/js',
+					ext: '.min.js'
+		      	}]
 			},
 		},
+		cssmin: {
+			cssmin: {
+				files: [{
+					expand: true,
+					cwd: 'style/css',
+					src: ['*.css', '!*.min.css'],
+					dest: 'temp/css',
+					ext: '.min.css'
+				}]
+			}
+		},
+		htmlmin: {
+			options: {                                 
+				removeComments: true,
+				collapseWhitespace: true
+			},
+			target: {
+				files: [{
+					expand: true,
+					cwd: 'temp_build/',
+					src: ['**/*.html'],
+					dest: 'build/',
+				}]
+			}
+		},
+		'string-replace': {
+			replace_css : {
+				files: [{
+					expand: true,
+					cwd: '<%= src_config.cwd %>',
+					src: '<%= src_config.src %>.html',
+					dest: '<%= src_config.dist %>'
+				}],
+				options: {
+					replacements: [{
+						pattern: /<link rel="stylesheet" href="(.*?)">/ig,
+						replacement: function (match, p1) {
+							var dir = p1.split("css/");
+							var file = "<style>" + grunt.file.read('temp/css/' + dir[1]) + "</style>";
+							console.log('temp/css/' + dir[1]);
+							return file;
+						}
+					}]
+				}
+			}
+		},
+		clean : {
+			clean: {
+				src: ["temp_build/", "temp/",".sass-cache/",".sublime-grunt.cache"]
+			}
+		},
 		watch: {
-			minjs: {
-				files: ['js/**/*.js'],
+			jshint : {
+				files: ['style/**/*.js'],
+				tasks: ['jshint'],
+			},
+			sass : {
+				files: ['style/**/*.scss'],
+				tasks: ['compass'],
+			},
+			minjs : {
+				files: ['style/**/*.js'],
 				tasks: ['uglify'],
 			},
-			mincss: {
-				files: ['css/**/*.css'],
-				tasks: ['uglify'],
-			}
+			cssmin : {
+				files: ['style/**/*.css'],
+				tasks: ['cssmin'],
+			},
+			replace_css : {
+				files: ['style/**/*.css','style/**/*.js','src/**/*.js'],
+				tasks: ['string-replace'],
+			},
+			htmlmin : {
+				files: ['style/**/*.css','style/**/*.js','src/**/*.js'],
+				tasks: ['htmlmin'],
+			},
+			clean : {
+				files: ['style/**/*.css','style/**/*.js','src/**/*.js'],
+				tasks: ['clean'],
+			},
 		},
 	});
 	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-string-replace');	
+	grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.loadNpmTasks('grunt-contrib-clean');
+	// grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask("default",['jshint','compass','uglify']);
+	grunt.registerTask("default",['jshint','compass','uglify','cssmin','string-replace','htmlmin','clean','watch']);
 }

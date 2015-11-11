@@ -1,0 +1,120 @@
+/* line 1, ../scss/position.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 5, ../scss/position.scss */
+body {
+  background-color: #ccc;
+  font-size: 14px;
+  height: 900px;
+}
+
+/* line 10, ../scss/position.scss */
+div {
+  line-height: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* line 16, ../scss/position.scss */
+.static {
+  width: 70%;
+  margin: 0 auto;
+  top: 50%;
+  height: 40px;
+  padding: 0 3%;
+  background: #eee;
+}
+
+/* line 24, ../scss/position.scss */
+.relative {
+  position: relative;
+  width: 70%;
+  height: 40px;
+  left: 50%;
+  margin: 0 0 0 -38%;
+  padding: 0 3%;
+  background: #000;
+  color: #fff;
+}
+
+/* line 35, ../scss/position.scss */
+.absolute1 {
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  left: 50%;
+  margin: 0 0 0 -38%;
+  padding: 0 3%;
+  background: red;
+  color: #fff;
+}
+
+/* line 46, ../scss/position.scss */
+.absolute2 {
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  left: 50%;
+  top: 120px;
+  margin: 0 0 0 -38%;
+  padding: 0 3%;
+  background: green;
+  color: #fff;
+}
+
+/* line 57, ../scss/position.scss */
+.relative-absolute-con {
+  position: relative;
+  width: 70%;
+  height: 40px;
+  left: 50%;
+  margin: 0 0 0 -38%;
+  padding: 0 3%;
+  background: blue;
+  color: #fff;
+  top: 80px;
+  height: 100px;
+}
+
+/* line 69, ../scss/position.scss */
+.absolute3 {
+  position: absolute;
+  width: 70%;
+  height: 40px;
+  left: 50%;
+  top: 50%;
+  margin: -20px 0 0 -38%;
+  padding: 0 3%;
+  background: red;
+  color: #fff;
+}
+
+/* line 80, ../scss/position.scss */
+.fixed {
+  position: fixed;
+  width: 70%;
+  height: 40px;
+  padding: 0 3%;
+  background: yellow;
+  margin: 0 0 0 -38%;
+  left: 50%;
+  color: #000;
+  z-index: 1000;
+  bottom: 0;
+  z-index: 0;
+}
+
+/* line 93, ../scss/position.scss */
+.z-index {
+  z-index: 1000;
+  bottom: 20px;
+}
+
+/* line 97, ../scss/position.scss */
+.clip {
+  clip: rect(0 auto 35px 10px);
+}
