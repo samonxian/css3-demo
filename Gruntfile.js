@@ -23,65 +23,39 @@ module.exports = function(grunt){
 				//是否严格模式
 				strict: false,
 				"globals": {
-					"qv" : true,
-					"$" : true,
-					"Zepto": true,
-					"zUtil" : true,
-					"zURL" : true,
-					"zHttp" : true,
-					"zMsg"  :true
+					
 				},
 			},
 			//具体任务配置
-			files: {
+			/*files: {
 				src: [
-					'js/1.js', 
-					'js/2.js'
+					
 				]
-			}
+			},*/
+			//全部
+			all : [
+				'style/js/**/.js'
+			]
 		},
-		concat: {
-			options: {
-			    separator: ';'
-			},
-			js: {
-				src: ['js/1.js', 'js/2.js'],
-				dest: 'build/js/scprits.js',
-			},
-			css: {
-				src: ['css/1.css', 'css/2.css'],
-				dest: 'build/css/styles.css',
+		compass : {
+			dist: {                   
+				options: {            
+					sassDir: 'style/scss',
+					cssDir: 'style/css',
+				}
 			},
 		},
 		uglify: {
 			minjs: {
-				src: ['build/js/scprits.js'],
-				dest: 'build/js/scprits.min.js',
+				src: ['style/js/*.js'],
+				dest: 'temp/js/*.min.js',
 			},
 			mincss: {
-				src: ['build/css/styles.css'],
-				dest: 'build/css/scprits.min.css',
+				src: ['style/css/*.css'],
+				dest: ['temp/css/*.css'],
 			},
-		},
-		copy : {
-			main : {
-				files : [ 
-					{expand: true,flatten: true, src: ['js/*'], dest: '<%=path %>/js', filter: 'isFile'},	
-					{expand: true,flatten: true, src: ['css/*'], dest: '<%=path %>/css', filter: 'isFile'},
-					{expand: true,flatten: true, src: ['index.html'], dest: '<%=path %>', filter: 'isFile'},	
-				]	
-							
-			}
 		},
 		watch: {
-			js: {
-				files: ['js/**/*.js'],
-				tasks: ['concat'],
-			},
-			css: {
-				files: ['css/**/*.css'],
-				tasks: ['concat'],
-			},
 			minjs: {
 				files: ['js/**/*.js'],
 				tasks: ['uglify'],
@@ -89,22 +63,12 @@ module.exports = function(grunt){
 			mincss: {
 				files: ['css/**/*.css'],
 				tasks: ['uglify'],
-			},
-			uglify: {
-				files: ['js/**/*.js'],
-				tasks: ['uglify'],
-			},
-			copy : {
-				files: ['*'],
-                                tasks: ['copy'],
-
-			},
+			}
 		},
 	});
+	grunt.loadNpmTasks('grunt-contrib-compass');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.registerTask("default",['jshint','concat','uglify','copy','watch']);
+	grunt.registerTask("default",['jshint','compass','uglify']);
 }
