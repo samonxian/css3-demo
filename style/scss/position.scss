@@ -1,3 +1,12 @@
+@charset "UTF-8";
+.position{
+	width:70%;
+    height: 40px;
+	padding: 0 3%;
+}
+@mixin same ($top,$right,$bottom,$left) {    
+	margin:$top $right $bottom $left;
+}
 html,body{
 	margin:0;
 	padding:0;
@@ -5,7 +14,7 @@ html,body{
 body{
 	background-color:#ccc;
 	font-size:14px;
-	height:900px;
+	height:1500px;
 }
 div{
 	line-height:40px;
@@ -14,81 +23,72 @@ div{
 	z-index:10;
 }
 .static {
-	width:70%;
-	margin:0 auto;
-	top: 50%;
-	height: 40px;
-	padding: 0 3%;
+	top: 50%;/*设置无效*/
 	background: #eee;
+	@include same(0,auto,0,auto);
+	@extend .position;
 }
 .relative {
 	position: relative;
-	width: 70%;
 	height: 40px;
 	left:50%;
-	margin:0 0 0 -38%;
-	padding: 0 3%;
 	background: #000;
 	color:#fff;
+	@include same(0,0,0,-38%);
+	@extend .position;
 }
-
+/**
+* 无top或bottom 设置
+*/
 .absolute1 {
 	position: absolute;
-	width: 70%;
-	height: 40px;
 	left:50%;
-	margin:0 0 0 -38%;
-	padding: 0 3%;
 	background: red;
 	color:#fff;
+	@include same(0,0,0,-38%);
+	@extend .position;
 }
-
+/**
+* 有top或bottom 设置
+*/
 .absolute2 {
 	position: absolute;
-	width: 70%;
-	height: 40px;
 	left:50%;
 	top:120px;
-	margin:0 0 0 -38%;
-	padding: 0 3%;
 	background: green;
 	color:#fff;
+	@include same(0,0,0,-38%);
+	@extend .position;
 }
 .relative-absolute-con{
 	position: relative;
-	width: 70%;
-	height: 40px;
 	left:50%;
-	margin:0 0 0 -38%;
-	padding: 0 3%;
 	background: blue;
 	color:#fff;
 	top:80px;
 	height:100px;
+	@include same(0,0,0,-38%);
+	@extend .position;
 }
 .absolute3 {
 	position: absolute;
-	width: 70%;
-	height: 40px;
 	left:50%;
 	top:50%;
-	margin:-20px 0 0 -38%;
-	padding: 0 3%;
 	background: red;
 	color:#fff;
+	@include same(-20px,0,0,-38%);
+	@extend .position;
 }
 .fixed{
 	position: fixed;
-	width: 70%;
-	height: 40px;
-	padding: 0 3%;
 	background: yellow;
-	margin:0 0 0 -38%;
 	left:50%;
 	color:#000;
 	z-index:1000;
 	bottom:0;
 	z-index: 0;
+	@include same(-20px,0,0,-38%);
+	@extend .position;
 }
 .z-index{
 	z-index: 1000;

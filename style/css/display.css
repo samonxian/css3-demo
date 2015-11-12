@@ -1,0 +1,49 @@
+/* line 2, ../scss/_same.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../scss/_same.scss */
+body {
+  background-color: #ccc;
+  font-size: 14px;
+  height: 1500px;
+}
+
+/* line 11, ../scss/_same.scss */
+div {
+  line-height: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* line 5, ../scss/display.scss */
+.display, .none-con, .block {
+  padding: 0 3%;
+  height: 40px;
+}
+
+/* line 9, ../scss/display.scss */
+.display-con {
+  margin: auto;
+  width: 70%;
+}
+
+/* line 13, ../scss/display.scss */
+.none-con {
+  background-color: #eee;
+}
+
+/* line 17, ../scss/display.scss */
+.none {
+  display: none;
+}
+
+/* line 20, ../scss/display.scss */
+.block {
+  display: block;
+  background-color: #000;
+  color: #fff;
+}

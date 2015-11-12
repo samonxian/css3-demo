@@ -98,8 +98,9 @@ module.exports = function(grunt){
 						pattern: /<link rel="stylesheet" href="(.*?)">/ig,
 						replacement: function (match, p1) {
 							var dir = p1.split("css/");
-							var file = "<style>" + grunt.file.read('temp/css/' + dir[1]) + "</style>";
-							console.log('temp/css/' + dir[1]);
+							var filename = dir[1].replace(".",".min.");
+							var file = "<style>" + grunt.file.read('temp/css/' + filename) + "</style>";
+							console.log('temp/css/' + filename);
 							return file;
 						}
 					}]
@@ -151,5 +152,5 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	// grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask("default",['jshint','compass','uglify','cssmin','string-replace','htmlmin','clean','watch']);
+	grunt.registerTask("default",['jshint','compass','uglify','cssmin','string-replace','htmlmin','clean']);
 }
