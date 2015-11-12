@@ -20,7 +20,7 @@ div {
 }
 
 /* line 5, ../scss/display.scss */
-.display, .none-con, .block {
+.display, .none-con, .block, .inline, .inline-block, .table, .list-item {
   padding: 0 3%;
   height: 40px;
 }
@@ -33,17 +33,48 @@ div {
 
 /* line 13, ../scss/display.scss */
 .none-con {
-  background-color: #eee;
+  background-color: #000;
+  color: #fff;
 }
 
-/* line 17, ../scss/display.scss */
+/* line 18, ../scss/display.scss */
 .none {
   display: none;
 }
 
-/* line 20, ../scss/display.scss */
+/* line 21, ../scss/display.scss */
 .block {
   display: block;
-  background-color: #000;
+  background-color: #F00;
   color: #fff;
+}
+
+/* line 27, ../scss/display.scss */
+.inline {
+  display: inline;
+  background-color: #008000;
+  color: #fff;
+}
+
+/* line 33, ../scss/display.scss */
+.inline-block {
+  display: inline-block;
+  background-color: #0000FF;
+  color: #fff;
+}
+
+/* line 39, ../scss/display.scss */
+.table {
+  display: table;
+  background-color: #FFFF00;
+  color: #000;
+}
+
+/* line 45, ../scss/display.scss */
+.list-item {
+  display: list-item;
+  list-style: square;
+  list-style-position: inside;
+  background-color: #eee;
+  color: #000;
 }

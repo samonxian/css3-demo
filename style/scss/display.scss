@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "same";
-$bg-color: #eee #000 #F00 #008000 #0000FF #FFFF00;
-
+$bg-color: #000 #F00 #008000 #0000FF #FFFF00;
+$useless: #eee;
 .display{
 	padding : 0 3%;
     height: 40px;
@@ -13,6 +13,7 @@ $bg-color: #eee #000 #F00 #008000 #0000FF #FFFF00;
 .none-con{	
 	background-color:nth($bg-color,1);
 	@extend .display;
+	color:#fff;
 }
 .none{
 	display:none;
@@ -22,4 +23,30 @@ $bg-color: #eee #000 #F00 #008000 #0000FF #FFFF00;
 	background-color:nth($bg-color,2);
 	@extend .display;
 	color:#fff;
+}
+.inline{
+	display:inline;
+	background-color:nth($bg-color,3);
+	@extend .display;
+	color:#fff;
+}
+.inline-block{
+	display:inline-block;
+	background-color:nth($bg-color,4);
+	@extend .display;
+	color:#fff;
+}
+.table{
+	display:table;
+	background-color:nth($bg-color,5);
+	@extend .display;
+	color:#000;
+}
+.list-item{
+	display:list-item;
+	list-style:square;
+	list-style-position:inside;
+	background-color:$useless;
+	@extend .display;
+	color:#000;
 }
