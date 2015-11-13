@@ -11,7 +11,7 @@
 - `inline` ： 指定对象为`内联`元素。
 - `inline-block` ： 指定对象为`内联块`元素(准确地说，应用此特性的元素呈现为内联对象，周围元素保持在同一行，但可以设置宽度和高度地块元素的属性)。
 - `run-in` : 根据上下文决定对象是内联对象还是块级对象。（CSS3）
-- `flex` : 根据上下文决定对象是内联对象还是块级对象。（CSS3）详细说明(http://www.w3cplus.com/css3/css3-flexbox-layout.html)
+- `flex` : 根据上下文决定对象是内联对象还是块级对象。（CSS3）[详细说明](http://www.w3cplus.com/css3/css3-flexbox-layout.html)
 - `inline-flex` : 根据上下文决定对象是内联对象还是块级对象。（CSS3）
 - `others` : 不常用不详细说明
 
