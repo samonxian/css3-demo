@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* line 2, ../scss/_same.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../scss/_same.scss */
+body {
+  background-color: #ccc;
+  font-size: 14px;
+  height: 1500px;
+}
+
+/* line 11, ../scss/_same.scss */
+div {
+  line-height: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* line 5, ../scss/display-flex.scss */
+.display {
+  height: 40px;
+  padding: 0 3%;
+}
+
+/* line 9, ../scss/display-flex.scss */
+.display-con {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素不设置width根据文字长度适应
+ * 当子元素width和小于父元素100%,width平均分配
+ */
+/* line 20, ../scss/display-flex.scss */
+.flex1 {
+  display: flex;
+  height: 100px;
+  background-color: #000;
+  flex-flow: row;
+}
+
+/* line 29, ../scss/display-flex.scss */
+.flex1 .row {
+  padding: 0 10px;
+  color: #fff;
+  border-left: 1px solid #ccc;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,自动换行
+ */
+/* line 39, ../scss/display-flex.scss */
+.flex2 {
+  display: flex;
+  height: 100px;
+  background-color: #f00;
+  flex-flow: row wrap;
+}
+
+/* line 48, ../scss/display-flex.scss */
+.flex2 .row {
+  width: 30%;
+  color: #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,width平均分配
+ */
+/* line 59, ../scss/display-flex.scss */
+.flex3 {
+  display: flex;
+  height: 100px;
+  background-color: #008000;
+  flex-flow: row;
+}
+
+/* line 68, ../scss/display-flex.scss */
+.flex3 .row {
+  width: 30%;
+  color: #fff;
+  border-left: 1px solid #ccc;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,width平均分配
+ */
+/* line 78, ../scss/display-flex.scss */
+.flex4 {
+  display: flex;
+  height: 100px;
+  background-color: #00f;
+  flex-flow: row;
+}
+
+/* line 87, ../scss/display-flex.scss */
+.flex4 .row {
+  color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+/* line 91, ../scss/display-flex.scss */
+.flex4 .row1 {
+  flex: 1;
+}
+
+/* line 94, ../scss/display-flex.scss */
+.flex4 .row2 {
+  flex: 1;
+}
+
+/* line 97, ../scss/display-flex.scss */
+.flex4 .row3 {
+  width: 60%;
+}
+
+/* line 100, ../scss/display-flex.scss */
+.flex4 .row4 {
+  flex: 2;
+}
+
+/* line 103, ../scss/display-flex.scss */
+.flex5 {
+  display: flex;
+  height: 100px;
+  background-color: #ff0;
+  flex-flow: row;
+}

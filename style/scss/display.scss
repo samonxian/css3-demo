@@ -1,52 +1,63 @@
-@charset "UTF-8";
-@import "same";
-$bg-color: #000 #F00 #008000 #0000FF #FFFF00;
+@charset 'UTF-8';
+@import 'same';
+$bg-color: #000 #f00 #008000 #00f #ff0;
 $useless: #eee;
-.display{
-	padding : 0 3%;
+.display {
     height: 40px;
+    padding: 0 3%;
 }
-.display-con{
-	margin:auto;
-	width:70%;
+.display-con {
+    width: 70%;
+    margin: auto;
 }
-.none-con{	
-	background-color:nth($bg-color,1);
-	@extend .display;
-	color:#fff;
+.none-con {
+    color: #fff;
+    background-color: nth($bg-color,1);
+
+    @extend .display;
 }
-.none{
-	display:none;
+.none {
+    display: none;
 }
-.block{
-	display:block;
-	background-color:nth($bg-color,2);
-	@extend .display;
-	color:#fff;
+.block {
+    display: block;
+
+    color: #fff;
+    background-color: nth($bg-color,2);
+
+    @extend .display;
 }
-.inline{
-	display:inline;
-	background-color:nth($bg-color,3);
-	@extend .display;
-	color:#fff;
+.inline {
+    display: inline;
+
+    color: #fff;
+    background-color: nth($bg-color,3);
+
+    @extend .display;
 }
-.inline-block{
-	display:inline-block;
-	background-color:nth($bg-color,4);
-	@extend .display;
-	color:#fff;
+.inline-block {
+    display: inline-block;
+
+    color: #fff;
+    background-color: nth($bg-color,4);
+
+    @extend .display;
 }
-.table{
-	display:table;
-	background-color:nth($bg-color,5);
-	@extend .display;
-	color:#000;
+.run-in {
+    display: run-in;
+
+    color: #000;
+    background-color: nth($bg-color,5);
+
+    @extend .display;
 }
-.list-item{
-	display:list-item;
-	list-style:square;
-	list-style-position:inside;
-	background-color:$useless;
-	@extend .display;
-	color:#000;
+.flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    color: #fff;
+    background-color: nth($bg-color,1);
+
+    @extend .display;
 }

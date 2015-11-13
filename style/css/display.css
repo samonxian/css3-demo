@@ -20,61 +20,61 @@ div {
 }
 
 /* line 5, ../scss/display.scss */
-.display, .none-con, .block, .inline, .inline-block, .table, .list-item {
-  padding: 0 3%;
+.display, .none-con, .block, .inline, .inline-block, .run-in, .flex {
   height: 40px;
+  padding: 0 3%;
 }
 
 /* line 9, ../scss/display.scss */
 .display-con {
-  margin: auto;
   width: 70%;
+  margin: auto;
 }
 
 /* line 13, ../scss/display.scss */
 .none-con {
-  background-color: #000;
   color: #fff;
+  background-color: #000;
 }
 
-/* line 18, ../scss/display.scss */
+/* line 19, ../scss/display.scss */
 .none {
   display: none;
 }
 
-/* line 21, ../scss/display.scss */
+/* line 22, ../scss/display.scss */
 .block {
   display: block;
-  background-color: #F00;
   color: #fff;
+  background-color: #f00;
 }
 
-/* line 27, ../scss/display.scss */
+/* line 30, ../scss/display.scss */
 .inline {
   display: inline;
-  background-color: #008000;
   color: #fff;
+  background-color: #008000;
 }
 
-/* line 33, ../scss/display.scss */
+/* line 38, ../scss/display.scss */
 .inline-block {
   display: inline-block;
-  background-color: #0000FF;
   color: #fff;
+  background-color: #00f;
 }
 
-/* line 39, ../scss/display.scss */
-.table {
-  display: table;
-  background-color: #FFFF00;
+/* line 46, ../scss/display.scss */
+.run-in {
+  display: run-in;
   color: #000;
+  background-color: #ff0;
 }
 
-/* line 45, ../scss/display.scss */
-.list-item {
-  display: list-item;
-  list-style: square;
-  list-style-position: inside;
-  background-color: #eee;
-  color: #000;
+/* line 54, ../scss/display.scss */
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  background-color: #000;
 }

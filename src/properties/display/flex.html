@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Description" content="css3属性大全，css3属性解说" />
+		<meta name="Keywords" content="css3,display" />
+		
+		<meta name="viewport" content="width=320,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>display</title>
+		<meta name="author" content="Sam,xianshannan@qq.com" />
+		<link rel="stylesheet" href="../../../style/css/display-flex.css">
+	</head>
+	<body>
+		<div class="display-con flex1">
+			<div class="row">flex(flex-flow:row)<br/>子元素</div>
+			<div class="row">子元素width<br/>不设置width</div>
+			<div class="row">小于父元素<br/>根据文字长度</div>
+			<div class="row">100%<br/>自适应</div>
+		</div>
+		<div class="display-con flex2">
+			<div class="row">flex(flex-flow:row wrap)</div>
+			<div class="row">子元素width</div>
+			<div class="row">大于父元素</div>
+			<div class="row">100%,自动换行</div>
+		</div>
+		<div class="display-con flex3">
+			<div class="row">flex(flex-flow:row)</div>
+			<div class="row">子元素width</div>
+			<div class="row">大于父元素</div>
+			<div class="row">100%,width平均</div>
+		</div>
+		<div class="display-con flex4">
+			<div class="row row1">flex:1</div>
+			<div class="row row2">flex:1</div>
+			<div class="row row3">width设置为60%</div>
+			<div class="row row4">flex:2</div>
+		</div>
+		<div class="display-con flex5">
+			flex(flex-flow:column) 类似于row,不详说<br/>(在flex本身容器中tex-align:center不生效)
+		</div>
+	</body>
+</html>
