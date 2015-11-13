@@ -13,7 +13,8 @@
 - `run-in` : 根据上下文决定对象是内联对象还是块级对象。（CSS3）
 - `flex` : 根据上下文决定对象是内联对象还是块级对象。（CSS3）详细说明(http://www.w3cplus.com/css3/css3-flexbox-layout.html)
 - `inline-flex` : 根据上下文决定对象是内联对象还是块级对象。（CSS3）
-- `其他` : 不常用不一一详细说明
+- `others` : 不常用不详细说明
+
 ##说明
 css2其中以`none`、`block`、`inline`为最常用,css3中`flex`、`inline-block`为最常用
 ##PC兼容性
