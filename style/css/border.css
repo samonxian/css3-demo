@@ -78,50 +78,73 @@ h2 {
   text-align: center;
 }
 
-/* line 3, ../scss/display.scss */
-.display, .none-con, .block, .inline, .inline-block, .run-in, .flex {
-  height: 40px;
+/* line 4, ../scss/border.scss */
+.border-con {
+  line-height: 20px;
+  height: 50px;
+  margin-bottom: 5px;
   padding: 0 3%;
+  padding-top: 10px;
+  text-align: left;
+  border: 1px solid #eee;
 }
 
-/* line 7, ../scss/display.scss */
-.none-con {
+/* line 16, ../scss/border.scss */
+.one {
   background-color: #008000;
 }
 
-/* line 12, ../scss/display.scss */
-.none {
-  display: none;
-}
-
-/* line 15, ../scss/display.scss */
-.block {
-  display: block;
+/* line 19, ../scss/border.scss */
+.two {
   background-color: #800072;
 }
 
-/* line 22, ../scss/display.scss */
-.inline {
-  display: inline;
+/* line 22, ../scss/border.scss */
+.three {
   background-color: #c70808;
 }
 
-/* line 29, ../scss/display.scss */
-.inline-block {
-  display: inline-block;
+/* line 25, ../scss/border.scss */
+.four {
   background-color: #0404bf;
 }
 
-/* line 36, ../scss/display.scss */
-.run-in {
-  display: run-in;
-  background-color: #a5a50a;
+/* line 28, ../scss/border.scss */
+.type_one .one {
+  border-radius: 10px;
 }
 
-/* line 43, ../scss/display.scss */
-.flex {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #008000;
+/* line 31, ../scss/border.scss */
+.type_one .two {
+  border-radius: 10px 20px;
+}
+
+/* line 34, ../scss/border.scss */
+.type_one .three {
+  border-radius: 10px 20px 30px;
+}
+
+/* line 37, ../scss/border.scss */
+.type_one .four {
+  border-radius: 10px 20px 30px 40px;
+}
+
+/* line 40, ../scss/border.scss */
+.type_two .one {
+  border-radius: 10px/5px;
+}
+
+/* line 43, ../scss/border.scss */
+.type_two .two {
+  border-radius: 10px 20px/5px 10px;
+}
+
+/* line 46, ../scss/border.scss */
+.type_two .three {
+  border-radius: 10px 20px 30px/5px 10px 15px;
+}
+
+/* line 49, ../scss/border.scss */
+.type_two .four {
+  border-radius: 10px 20px 30px 40px/5px 10px 15px 20px;
 }

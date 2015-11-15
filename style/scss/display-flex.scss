@@ -1,49 +1,45 @@
 @charset 'UTF-8';
 @import 'same';
-$bg-color: #000 #f00 #008000 #00f #ff0;
-$useless: #eee;
-.display {
-    height: 40px;
-    padding: 0 3%;
-}
-.display-con {
-    width: 70%;
-    margin: auto;
-
-    text-align: center;
-}
 /**
  * flex-flow : row 单行排列
  * 子元素不设置width根据文字长度适应
  * 当子元素width和小于父元素100%,width平均分配
  */
 .flex1 {
-    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 
     height: 100px;
 
     background-color: nth($bg-color,1);
 
-    flex-flow: row;//单行排列;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;
 }
 .flex1 .row {
     padding: 0 10px;
 
     color: #fff;
-    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 /**
  * flex-flow : row 单行排列
  * 子元素width和大于父元素100%,自动换行
  */
 .flex2 {
-    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 
     height: 100px;
 
     background-color: nth($bg-color,2);
 
-    flex-flow: row wrap;//单行排列;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;//单行排列;
 }
 .flex2 .row {
     width: 30%;
@@ -57,55 +53,73 @@ $useless: #eee;
  * 子元素width和大于父元素100%,width平均分配
  */
 .flex3 {
-    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 
     height: 100px;
 
     background-color: nth($bg-color,3);
 
-    flex-flow: row;//单行排列;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;
 }
 .flex3 .row {
     width: 30%;
 
     color: #fff;
-    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 /**
  * flex-flow : row 单行排列
  * 子元素width和大于父元素100%,width平均分配
  */
 .flex4 {
-    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 
     height: 100px;
 
     background-color: nth($bg-color,4);
 
-    flex-flow: row;//单行排列;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;
 }
 .flex4 .row {
     color: #fff;
     border-right: 1px solid #ccc;
 }
 .flex4 .row1 {
-    flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 .flex4 .row2 {
-    flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
 }
 .flex4 .row3 {
     width: 60%;
 }
 .flex4 .row4 {
-    flex: 2;
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
 }
 .flex5 {
-    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
 
     height: 100px;
 
     background-color: nth($bg-color,5);
 
-    flex-flow: row;//单行排列;
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;  
 }

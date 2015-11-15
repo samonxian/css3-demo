@@ -78,50 +78,62 @@ h2 {
   text-align: center;
 }
 
-/* line 3, ../scss/display.scss */
+/* line 5, ../scss/height.scss */
 .display, .none-con, .block, .inline, .inline-block, .run-in, .flex {
   height: 40px;
   padding: 0 3%;
 }
 
-/* line 7, ../scss/display.scss */
-.none-con {
-  background-color: #008000;
+/* line 9, ../scss/height.scss */
+.display-con {
+  width: 70%;
+  margin: auto;
 }
 
-/* line 12, ../scss/display.scss */
+/* line 13, ../scss/height.scss */
+.none-con {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 19, ../scss/height.scss */
 .none {
   display: none;
 }
 
-/* line 15, ../scss/display.scss */
+/* line 22, ../scss/height.scss */
 .block {
   display: block;
-  background-color: #800072;
+  color: #fff;
+  background-color: #f00;
 }
 
-/* line 22, ../scss/display.scss */
+/* line 30, ../scss/height.scss */
 .inline {
   display: inline;
-  background-color: #c70808;
+  color: #fff;
+  background-color: #008000;
 }
 
-/* line 29, ../scss/display.scss */
+/* line 38, ../scss/height.scss */
 .inline-block {
   display: inline-block;
-  background-color: #0404bf;
+  color: #fff;
+  background-color: #00f;
 }
 
-/* line 36, ../scss/display.scss */
+/* line 46, ../scss/height.scss */
 .run-in {
   display: run-in;
-  background-color: #a5a50a;
+  color: #000;
+  background-color: #ff0;
 }
 
-/* line 43, ../scss/display.scss */
+/* line 54, ../scss/height.scss */
 .flex {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #008000;
+  color: #fff;
+  background-color: #000;
 }

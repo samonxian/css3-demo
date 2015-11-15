@@ -1,34 +1,80 @@
 @charset "UTF-8";
-/* line 2, ../scss/_same.scss */
-html, body {
+@media screen and (max-width: 319px) {
+  /* line 6, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  /* line 12, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  /* line 18, ../scss/_same.scss */
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  /* line 24, ../scss/_same.scss */
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  /* line 30, ../scss/_same.scss */
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  /* line 36, ../scss/_same.scss */
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  /* line 42, ../scss/_same.scss */
+  html {
+    font-size: 110.4px;
+  }
+}
+/* line 47, ../scss/_same.scss */
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-/* line 6, ../scss/_same.scss */
+/* line 52, ../scss/_same.scss */
 body {
-  background-color: #ccc;
-  font-size: 14px;
+  font-size: 16px;
   height: 1500px;
+  color: #fff;
+  background-color: #ccc;
 }
 
-/* line 11, ../scss/_same.scss */
+/* line 60, ../scss/_same.scss */
 div {
-  line-height: 40px;
+  z-index: 10;
   overflow-x: auto;
   white-space: nowrap;
-  z-index: 10;
 }
 
-/* line 5, ../scss/display-flex.scss */
-.display {
+/* line 67, ../scss/_same.scss */
+h2 {
+  line-height: 40px;
   height: 40px;
-  padding: 0 3%;
+  text-align: left;
+  color: #000;
 }
 
-/* line 9, ../scss/display-flex.scss */
+/* line 76, ../scss/_same.scss */
 .display-con {
-  width: 70%;
+  line-height: 40px;
+  width: 90%;
   margin: auto;
   text-align: center;
 }
@@ -38,34 +84,42 @@ div {
  * 子元素不设置width根据文字长度适应
  * 当子元素width和小于父元素100%,width平均分配
  */
-/* line 20, ../scss/display-flex.scss */
+/* line 8, ../scss/display-flex.scss */
 .flex1 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
-  background-color: #000;
+  background-color: #008000;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
   flex-flow: row;
 }
 
-/* line 29, ../scss/display-flex.scss */
+/* line 21, ../scss/display-flex.scss */
 .flex1 .row {
   padding: 0 10px;
   color: #fff;
-  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 /**
  * flex-flow : row 单行排列
  * 子元素width和大于父元素100%,自动换行
  */
-/* line 39, ../scss/display-flex.scss */
+/* line 31, ../scss/display-flex.scss */
 .flex2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
-  background-color: #f00;
+  background-color: #800072;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
 }
 
-/* line 48, ../scss/display-flex.scss */
+/* line 44, ../scss/display-flex.scss */
 .flex2 .row {
   width: 30%;
   color: #fff;
@@ -77,11 +131,15 @@ div {
  * flex-flow : row 单行排列
  * 子元素width和大于父元素100%,width平均分配
  */
-/* line 59, ../scss/display-flex.scss */
+/* line 55, ../scss/display-flex.scss */
 .flex3 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
-  background-color: #008000;
+  background-color: #c70808;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
   flex-flow: row;
 }
 
@@ -89,7 +147,7 @@ div {
 .flex3 .row {
   width: 30%;
   color: #fff;
-  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
 }
 
 /**
@@ -98,42 +156,56 @@ div {
  */
 /* line 78, ../scss/display-flex.scss */
 .flex4 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
-  background-color: #00f;
+  background-color: #0404bf;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
   flex-flow: row;
 }
 
-/* line 87, ../scss/display-flex.scss */
+/* line 91, ../scss/display-flex.scss */
 .flex4 .row {
   color: #fff;
   border-right: 1px solid #ccc;
 }
 
-/* line 91, ../scss/display-flex.scss */
+/* line 95, ../scss/display-flex.scss */
 .flex4 .row1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
-/* line 94, ../scss/display-flex.scss */
+/* line 100, ../scss/display-flex.scss */
 .flex4 .row2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
-/* line 97, ../scss/display-flex.scss */
+/* line 105, ../scss/display-flex.scss */
 .flex4 .row3 {
   width: 60%;
 }
 
-/* line 100, ../scss/display-flex.scss */
+/* line 108, ../scss/display-flex.scss */
 .flex4 .row4 {
+  -webkit-flex: 2;
+  -ms-flex: 2;
   flex: 2;
 }
 
-/* line 103, ../scss/display-flex.scss */
+/* line 113, ../scss/display-flex.scss */
 .flex5 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 100px;
-  background-color: #ff0;
+  background-color: #a5a50a;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
   flex-flow: row;
 }

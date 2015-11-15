@@ -1,16 +1,83 @@
-@charset "UTF-8";
-html,body{
-	margin:0;
-	padding:0;
+@charset 'UTF-8';
+$bg-color: #008000 #800072 #c70808 #0404bf #a5a50a;
+$useless: #eee;
+
+@charset 'UTF-8';@media screen and (max-width: 319px) {
+    html {
+        font-size: 85.33333px;
+    }
 }
-body{
-	background-color:#ccc;
-	font-size:14px;
-	height:1500px;
+
+@media screen and (min-width: 320px) and (max-width:359px) {
+    html {
+        font-size: 85.33333px;
+    }
 }
-div{
-	line-height:40px;
-	overflow-x:auto;
-	white-space: nowrap;
-	z-index:10;
+
+@media screen and (min-width: 360px) and (max-width:374px) {
+    html {
+        font-size: 96px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width:383px) {
+    html {
+        font-size: 100px;
+    }
+}
+
+@media screen and (min-width: 384px) and (max-width:399px) {
+    html {
+        font-size: 102.4px;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width:413px) {
+    html {
+        font-size: 106.66667px;
+    }
+}
+
+@media screen and (min-width: 414px) {
+    html {
+        font-size: 110.4px;
+    }
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 16px;
+
+    height: 1500px;
+
+    color: #fff;
+    background-color: #ccc;
+}
+div {
+    z-index: 10;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+}
+h2 {
+    line-height: 40px;
+
+    height: 40px;
+
+    text-align: left;
+
+    color: #000;
+}
+.display-con {
+    line-height: 40px;
+
+    width: 90%;
+    margin: auto;
+
+    text-align: center;
 }
