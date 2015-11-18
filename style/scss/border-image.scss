@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+@import 'same';
+body {
+    background-color: #fff;
+}
+.im-com {
+    font-size: 13px;
+
+    width: 90%;
+    height: 81px;
+    margin-top: 20px;
+
+    white-space: normal;
+
+    color: #000;
+}
+/*拉伸*/
+.border-image-stretch {
+    border: 27px solid #000;
+    border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
+    border-image-slice: 27 27 27 27;
+    border-image-repeat: stretch;
+}
+/*重复*/
+.border-image-repeat {
+    border: 27px solid #000;
+    border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
+    border-image-slice: 27 27 27 27;
+    border-image-repeat: repeat;
+}
+/*环绕*/
+.border-image-round {
+    border: 27px solid #000;
+    border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
+    border-image-slice: 27 27 27 27;
+    border-image-repeat: round;
+}
+.margin_auto{
+    margin:auto;
+}
+.border-image-outset-width{
+    width:80%;
+
+}
+.border-image-outset{
+    border-image-outset:27px 27px 27px 27px; 
+    margin-top:70px;
+}

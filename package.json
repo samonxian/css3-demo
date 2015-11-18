@@ -1,11 +1,8 @@
 {
   "name": "css3-demo",
   "version": "1.0.0",
-  "description": "css3学习demo",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "css3-demo",
+  "main": "index.js",  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xianshannan/css3-demo.git"
@@ -19,6 +16,7 @@
   "dependencies": {
     "grunt": "^0.4.5"
   },
+
   "devDependencies": {
     "grunt-contrib-clean": "^0.6.0",
     "grunt-contrib-compass": "^1.0.4",
@@ -32,5 +30,9 @@
     "grunt-contrib-uglify": "^0.10.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-string-replace": "^1.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "http-server -a 0.0.0.0 -p 8000"
   }
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Description" content="css3属性大全，css3属性解说" />
+		<meta name="Keywords" content="css3,border" />
+		
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>border</title>
+		<meta name="author" content="Sam,xianshannan@qq.com" />
+		<link rel="stylesheet" href="../../../style/css/border-image.css">
+	</head>
+	<body>
+		<div class="display-con">
+			<h2>border-image-repeat：</h2>
+			<div class="type_one">
+				<div class=" im-com border-image-stretch">
+					背景图片拉伸stretch，默认值（拉伸不变形可用实用）
+				</div>
+				<div class=" im-com border-image-repeat">
+					背景图片重复repeat（有时候达不到想要的效果）
+				</div>
+				<div class=" im-com border-image-round">
+					背景图片环绕round（这个更实用）
+				</div>
+			</div>
+			<h2>border-image-outset：</h2>
+			<div class="type_one">
+				
+				<div class=" im-com border-image-round border-image-outset-width margin_auto">
+					无outset参考
+				</div>
+				<div class=" im-com border-image-round border-image-outset-width border-image-outset margin_auto">
+					设置outset后 原来的margin和padding都是还是存在，在此基础上ouset
+				</div>
+				<div class=" im-com border-image-round border-image-outset-width border-image-outset">
+					设置outset后 如果宽度和高度大于父元素，会不可见
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
