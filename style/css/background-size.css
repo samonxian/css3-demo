@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media screen and (max-width: 319px) {
   /* line 6, ../scss/_same.scss */
   html {
@@ -89,60 +88,63 @@ h2 {
   text-align: center;
 }
 
-/* line 3, ../scss/border-image.scss */
+/* line 3, ../scss/background-size.scss */
 body {
   background-color: #fff;
 }
 
-/* line 6, ../scss/border-image.scss */
-.im-com {
-  font-size: 13px;
+/* line 6, ../scss/background-size.scss */
+h2 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+/* line 10, ../scss/background-size.scss */
+.bg {
   width: 90%;
-  height: 81px;
-  margin-top: 20px;
-  white-space: normal;
-  color: #000;
+  height: 122px;
+  background: url("../img/bg.png") no-repeat 0 0;
 }
 
-/*拉伸*/
-/* line 18, ../scss/border-image.scss */
-.border-image-stretch {
-  border: 27px solid #000;
-  border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
-  border-image-slice: 27 27 27 27;
-  border-image-repeat: stretch;
+/* line 16, ../scss/background-size.scss */
+.one {
+  background-color: #008000;
+  background-size: auto;
 }
 
-/*重复*/
-/* line 25, ../scss/border-image.scss */
-.border-image-repeat {
-  border: 27px solid #000;
-  border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
-  border-image-slice: 27 27 27 27;
-  border-image-repeat: repeat;
+/* line 20, ../scss/background-size.scss */
+.two {
+  background-color: #800072;
+  background-size: 150px 80px;
 }
 
-/*环绕*/
-/* line 32, ../scss/border-image.scss */
-.border-image-round {
-  border: 27px solid #000;
-  border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
-  border-image-slice: 27 27 27 27;
-  border-image-repeat: round;
+/* line 24, ../scss/background-size.scss */
+.three {
+  background-color: #c70808;
+  background-size: 80% 80%;
 }
 
-/* line 38, ../scss/border-image.scss */
-.margin_auto {
-  margin: auto;
+/* line 28, ../scss/background-size.scss */
+.four {
+  background-color: #0404bf;
+  background-size: 122px 50%;
 }
 
-/* line 41, ../scss/border-image.scss */
-.border-image-outset-width {
-  width: 80%;
+/* line 32, ../scss/background-size.scss */
+.five {
+  background-color: #a5a50a;
+  background-size: auto 50%;
 }
 
-/* line 45, ../scss/border-image.scss */
-.border-image-outset {
-  border-image-outset: 27px 27px 27px 27px;
-  margin-top: 70px;
+/* line 36, ../scss/background-size.scss */
+.six {
+  background-color: #008000;
+  background-size: cover;
+}
+
+/* line 40, ../scss/background-size.scss */
+.seven {
+  height: 50px;
+  background-color: #008000;
+  background-size: contain;
 }
