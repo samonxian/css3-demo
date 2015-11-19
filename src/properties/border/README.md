@@ -1,5 +1,5 @@
-语法(CSS3)：
-border-radius：[ `length` | `percentage` ]{1,4} [ / [ `length` | `percentage` ]{1,4} ]?
+##语法(CSS3)
+`border-radius`：[ `length` | `percentage` ]{1,4} [ / [ `length` | `percentage` ]{1,4} ]?
 默认值：看每个独立属性
 适用于：所有元素
 继承性：无
