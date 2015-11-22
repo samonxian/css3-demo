@@ -87,15 +87,16 @@ body {
 /* line 6, ../scss/border-image.scss */
 .im-com {
   font-size: 13px;
-  width: 90%;
+  width: 80%;
   height: 81px;
+  margin: auto;
   margin-top: 20px;
   white-space: normal;
   color: #000;
 }
 
 /*拉伸*/
-/* line 18, ../scss/border-image.scss */
+/* line 19, ../scss/border-image.scss */
 .border-image-stretch {
   border: 27px solid #000;
   border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
@@ -104,7 +105,7 @@ body {
 }
 
 /*重复*/
-/* line 25, ../scss/border-image.scss */
+/* line 26, ../scss/border-image.scss */
 .border-image-repeat {
   border: 27px solid #000;
   border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
@@ -113,7 +114,7 @@ body {
 }
 
 /*环绕*/
-/* line 32, ../scss/border-image.scss */
+/* line 33, ../scss/border-image.scss */
 .border-image-round {
   border: 27px solid #000;
   border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
@@ -121,18 +122,18 @@ body {
   border-image-repeat: round;
 }
 
-/* line 38, ../scss/border-image.scss */
+/* line 39, ../scss/border-image.scss */
 .margin_auto {
   margin: auto;
 }
 
-/* line 41, ../scss/border-image.scss */
+/* line 42, ../scss/border-image.scss */
 .border-image-outset-width {
-  width: 80%;
+  width: 60%;
 }
 
 /* line 45, ../scss/border-image.scss */
 .border-image-outset {
-  border-image-outset: 27px 27px 27px 27px;
   margin-top: 70px;
+  border-image-outset: 27px 27px 27px 27px;
 }

@@ -70,28 +70,31 @@ module.exports = function(grunt){
 					ext: '.min.css'
 				}]
 			}
-		},
-		htmlmin: {
-			options: {                                 
-				removeComments: true,
-				collapseWhitespace: true
+		},		
+		copy: {
+			main : {
+				expand: true,
+				cwd: 'src/',
+				src: ['**/*.html'],
+				dest: 'temp_html/html/',
+				flatten: true,
+				filter: 'isFile',
 			},
-			target: {
-				files: [{
-					expand: true,
-					cwd: 'temp_build/',
-					src: ['**/*.html'],
-					dest: 'build/',
-				}]
+			cp_style : {
+				expand: true,
+				cwd: 'temp/',
+				src: ['**'],
+				dest: 'build/',
+				filter: 'isFile',
 			}
 		},
 		'string-replace': {
 			replace_css : {
 				files: [{
 					expand: true,
-					cwd: '<%= src_config.cwd %>',
-					src: '<%= src_config.src %>.html',
-					dest: '<%= src_config.dist %>'
+					cwd: 'temp_html/',
+					src: ['html/**/*.html'],
+					dest: 'build/',
 				}],
 				options: {
 					replacements: [{
@@ -107,9 +110,23 @@ module.exports = function(grunt){
 				}
 			}
 		},
+		htmlmin: {
+			options: {                                 
+				removeComments: true,
+				collapseWhitespace: true
+			},
+			target: {
+				files: [{
+					expand: true,
+					cwd: 'temp_build/',
+					src: ['**/*.html'],
+					dest: 'build/',
+				}]
+			}
+		},
 		clean : {
 			clean: {
-				src: ["temp_build/", "temp/",".sass-cache/",".sublime-grunt.cache"]
+				src: ["temp_build/", "temp/","temp_html/",".sass-cache/",".sublime-grunt.cache"]
 			}
 		},
 		watch: {
@@ -147,10 +164,10 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-string-replace');	
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
-	grunt.loadNpmTasks('grunt-contrib-clean');
-	// grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-contrib-clean');	
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.registerTask("default",['jshint','compass','uglify','cssmin','string-replace','htmlmin','clean']);
+	grunt.registerTask("default",['jshint','compass','uglify','cssmin','copy','string-replace','htmlmin','clean']);
 }

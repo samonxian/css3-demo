@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Description" content="css3属性大全，css3属性解说" />
+		<meta name="Keywords" content="css3,position" />
+		
+		<meta name="viewport" content="width=320,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>position</title>
+		<meta name="author" content="Sam,xianshannan@qq.com" />
+		<style>@charset "UTF-8";.display-con,h2{line-height:40px}@media screen and (max-width:319px){html{font-size:85.33px}}@media screen and (min-width:320px) and (max-width:359px){html{font-size:85.33px}}@media screen and (min-width:360px) and (max-width:374px){html{font-size:96px}}@media screen and (min-width:375px) and (max-width:383px){html{font-size:100px}}@media screen and (min-width:384px) and (max-width:399px){html{font-size:102.4px}}@media screen and (min-width:400px) and (max-width:413px){html{font-size:106.67px}}@media screen and (min-width:414px){html{font-size:110.4px}}body,html{margin:0;padding:0}body{font-size:16px;height:1500px;color:#fff;background-color:#ccc}div{z-index:10;overflow-x:auto;white-space:nowrap}h2{height:40px;text-align:left;color:#000}.display-con{width:90%;margin:auto;text-align:center}.absolute1,.absolute2,.absolute3,.fixed,.position,.relative,.relative-absolute-con,.static{line-height:40px;width:70%;height:40px;padding:0 3%}.static{top:50%;background-color:green;margin:0 auto}.relative{position:relative;left:50%;height:40px;color:#fff;background-color:#800072;margin:0 0 0 -38%}.absolute1,.absolute2{position:absolute;left:50%;margin:0 0 0 -38%;color:#fff}.absolute1{background-color:#c70808}.absolute2{top:120px;background-color:#0404bf}.relative-absolute-con{position:relative;top:80px;left:50%;height:100px;color:#fff;background-color:#a5a50a;margin:0 0 0 -38%}.absolute3,.fixed{left:50%;margin:-20px 0 0 -38%}.absolute3{position:absolute;top:50%;color:#fff;background-color:green}.fixed{position:fixed;z-index:1000;z-index:0;bottom:0;color:#000;background-color:#800072}.z-index{z-index:1000;bottom:20px}.clip{clip:rect(0 auto 35px 10px)}</style>
+	</head>
+	<body>
+		<div class="static">Static ： 查看元素对比</div>
+		<div class="relative">Relative,参考位置:当前(是指以static元素为参考)</div>
+		<div class="absolute1">Absolute,无top时,参考位置:当前</div>
+		<div class="absolute2">Absolute,有top,参考位置:窗口(父辈元素无relative)</div>
+		<div class="relative-absolute-con">
+			<div class="absolute3">Absolute,父辈元素relative</div>
+		</div>
+		<div class="relative clip" style="top:80px;"> 
+			relative clip 滚动下去看看~
+		</div>
+		<div class="absolute1 clip " style="bottom:60px;">Absolute clip(剪切只在absolute、fixed生效)</div>
+		<div class="fixed z-index">fixed z-index（叠成设置，值大的在上面，不是设置不产生叠成）</div>
+		<div class="fixed">fixed</div>
+	</body>
+</html>
