@@ -86,6 +86,13 @@ module.exports = function(grunt){
 				src: ['**'],
 				dest: 'build/',
 				filter: 'isFile',
+			},
+			cp_img : {
+				expand: true,
+				cwd: 'style/img/',
+				src: ['**'],
+				dest: 'build/img/',
+				filter: 'isFile',
 			}
 		},
 		'string-replace': {
