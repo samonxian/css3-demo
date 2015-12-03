@@ -1,0 +1,103 @@
+@charset 'UTF-8';
+@import 'same';
+.position {
+    line-height: 40px;
+
+    width: 70%;
+    height: 40px;
+    padding: 0 3%;
+}
+@mixin same ($top,$right,$bottom,$left) {
+    margin: $top $right $bottom $left;
+}
+.static {
+    top: 50%;/*设置无效*/
+
+    background-color: nth($bg-color,1);
+
+    @include same(0,auto,0,auto);
+    @extend .position;
+}
+.relative {
+    position: relative;
+    left: 50%;
+
+    height: 40px;
+
+    color: #fff;
+    background-color: nth($bg-color,2);
+
+    @include same(0,0,0,-38%);
+    @extend .position;
+}
+/**
+* 无top或bottom 设置
+*/
+.absolute1 {
+    position: absolute;
+    left: 50%;
+
+    color: #fff;
+    background-color: nth($bg-color,3);
+
+    @include same(0,0,0,-38%);
+    @extend .position;
+}
+/**
+* 有top或bottom 设置
+*/
+.absolute2 {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+
+    color: #fff;
+    background-color: nth($bg-color,4);
+
+    @include same(0,0,0,-38%);
+    @extend .position;
+}
+.relative-absolute-con {
+    position: relative;
+    top: 80px;
+    left: 50%;
+
+    height: 100px;
+
+    color: #fff;
+    background-color: nth($bg-color,5);
+
+    @include same(0,0,0,-38%);
+    @extend .position;
+}
+.absolute3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    color: #fff;
+    background-color: nth($bg-color,1);
+
+    @include same(-20px,0,0,-38%);
+    @extend .position;
+}
+.fixed {
+    position: fixed;
+    z-index: 1000;
+    z-index: 0;
+    bottom: 0;
+    left: 50%;
+
+    color: #000;
+    background-color: nth($bg-color,2);
+
+    @include same(-20px,0,0,-38%);
+    @extend .position;
+}
+.z-index {
+    z-index: 1000;
+    bottom: 20px;
+}
+.clip {
+    clip: rect(0 auto 35px 10px);
+}

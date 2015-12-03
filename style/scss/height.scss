@@ -1,0 +1,63 @@
+@charset 'UTF-8';
+@import 'same';
+$bg-color: #000 #f00 #008000 #00f #ff0;
+$useless: #eee;
+.display {
+    height: 40px;
+    padding: 0 3%;
+}
+.display-con {
+    width: 70%;
+    margin: auto;
+}
+.none-con {
+    color: #fff;
+    background-color: nth($bg-color,1);
+
+    @extend .display;
+}
+.none {
+    display: none;
+}
+.block {
+    display: block;
+
+    color: #fff;
+    background-color: nth($bg-color,2);
+
+    @extend .display;
+}
+.inline {
+    display: inline;
+
+    color: #fff;
+    background-color: nth($bg-color,3);
+
+    @extend .display;
+}
+.inline-block {
+    display: inline-block;
+
+    color: #fff;
+    background-color: nth($bg-color,4);
+
+    @extend .display;
+}
+.run-in {
+    display: run-in;
+
+    color: #000;
+    background-color: nth($bg-color,5);
+
+    @extend .display;
+}
+.flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    color: #fff;
+    background-color: nth($bg-color,1);
+
+    @extend .display;
+}

@@ -1,0 +1,12 @@
+@charset 'UTF-8';
+@import 'same';
+$bg-color: #000 #f00 #008000 #00f #ff0;
+$useless: #eee;
+.width {
+    height: 40px;
+    padding: 0 3%;
+}
+.width-con {
+    width: 70%;
+    margin: auto;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Description" content="css3属性大全，css3属性解说" />
+		<meta name="Keywords" content="css3,position" />
+		
+		<meta name="viewport" content="width=320,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>position</title>
+		<meta name="author" content="Sam,xianshannan@qq.com" />
+		<link rel="stylesheet" href="../../../style/css/position.css">
+	</head>
+	<body>
+		<div class="static">Static ： 查看元素对比</div>
+		<div class="relative">Relative,参考位置:当前(是指以static元素为参考)</div>
+		<div class="absolute1">Absolute,无top时,参考位置:当前</div>
+		<div class="absolute2">Absolute,有top,参考位置:窗口(父辈元素无relative)</div>
+		<div class="relative-absolute-con">
+			<div class="absolute3">Absolute,父辈元素relative</div>
+		</div>
+		<div class="relative clip" style="top:80px;"> 
+			relative clip 滚动下去看看~
+		</div>
+		<div class="absolute1 clip " style="bottom:60px;">Absolute clip(剪切只在absolute、fixed生效)</div>
+		<div class="fixed z-index">fixed z-index（叠成设置，值大的在上面，不是设置不产生叠成）</div>
+		<div class="fixed">fixed</div>
+	</body>
+</html>

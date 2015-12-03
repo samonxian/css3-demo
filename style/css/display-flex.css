@@ -1,0 +1,221 @@
+@charset "UTF-8";
+@media screen and (max-width: 319px) {
+  /* line 6, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  /* line 12, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  /* line 18, ../scss/_same.scss */
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  /* line 24, ../scss/_same.scss */
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  /* line 30, ../scss/_same.scss */
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  /* line 36, ../scss/_same.scss */
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  /* line 42, ../scss/_same.scss */
+  html {
+    font-size: 110.4px;
+  }
+}
+/* line 47, ../scss/_same.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 52, ../scss/_same.scss */
+body {
+  font-size: 16px;
+  height: 1500px;
+  color: #fff;
+  background-color: #ccc;
+}
+
+/* line 60, ../scss/_same.scss */
+div {
+  z-index: 10;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* line 67, ../scss/_same.scss */
+h1 {
+  height: 20px;
+  padding: 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 75, ../scss/_same.scss */
+h2 {
+  line-height: 40px;
+  height: 40px;
+  margin: 5px 0 0 0;
+  padding: 5px 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 86, ../scss/_same.scss */
+.display-con {
+  line-height: 40px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素不设置width根据文字长度适应
+ * 当子元素width和小于父元素100%,width平均分配
+ */
+/* line 8, ../scss/display-flex.scss */
+.flex1 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  background-color: #008000;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+}
+
+/* line 21, ../scss/display-flex.scss */
+.flex1 .row {
+  padding: 0 10px;
+  color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,自动换行
+ */
+/* line 31, ../scss/display-flex.scss */
+.flex2 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  background-color: #800072;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/* line 44, ../scss/display-flex.scss */
+.flex2 .row {
+  width: 30%;
+  color: #fff;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,width平均分配
+ */
+/* line 55, ../scss/display-flex.scss */
+.flex3 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  background-color: #c70808;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+}
+
+/* line 68, ../scss/display-flex.scss */
+.flex3 .row {
+  width: 30%;
+  color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,width平均分配
+ */
+/* line 78, ../scss/display-flex.scss */
+.flex4 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  background-color: #0404bf;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+}
+
+/* line 91, ../scss/display-flex.scss */
+.flex4 .row {
+  color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+/* line 95, ../scss/display-flex.scss */
+.flex4 .row1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 100, ../scss/display-flex.scss */
+.flex4 .row2 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+/* line 105, ../scss/display-flex.scss */
+.flex4 .row3 {
+  width: 60%;
+}
+
+/* line 108, ../scss/display-flex.scss */
+.flex4 .row4 {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+/* line 113, ../scss/display-flex.scss */
+.flex5 {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  background-color: #a5a50a;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+}

@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+@import 'same';
+.display {
+    height: 40px;
+    padding: 0 3%;
+}
+.none-con {
+    background-color: nth($bg-color,1);
+
+    @extend .display;
+}
+.none {
+    display: none;
+}
+.block {
+    display: block;
+
+    background-color: nth($bg-color,2);
+
+    @extend .display;
+}
+.inline {
+    display: inline;
+
+    background-color: nth($bg-color,3);
+
+    @extend .display;
+}
+.inline-block {
+    display: inline-block;
+
+    background-color: nth($bg-color,4);
+
+    @extend .display;
+}
+.run-in {
+    display: run-in;
+
+    background-color: nth($bg-color,5);
+
+    @extend .display;
+}
+.flex {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    background-color: nth($bg-color,1);
+
+    @extend .display;
+}

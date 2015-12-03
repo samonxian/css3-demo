@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@media screen and (max-width: 319px) {
+  /* line 6, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  /* line 12, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  /* line 18, ../scss/_same.scss */
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  /* line 24, ../scss/_same.scss */
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  /* line 30, ../scss/_same.scss */
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  /* line 36, ../scss/_same.scss */
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  /* line 42, ../scss/_same.scss */
+  html {
+    font-size: 110.4px;
+  }
+}
+/* line 47, ../scss/_same.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 52, ../scss/_same.scss */
+body {
+  font-size: 16px;
+  height: 1500px;
+  color: #fff;
+  background-color: #ccc;
+}
+
+/* line 60, ../scss/_same.scss */
+div {
+  z-index: 10;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* line 67, ../scss/_same.scss */
+h1 {
+  height: 20px;
+  padding: 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 75, ../scss/_same.scss */
+h2 {
+  line-height: 40px;
+  height: 40px;
+  margin: 5px 0 0 0;
+  padding: 5px 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 86, ../scss/_same.scss */
+.display-con {
+  line-height: 40px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 3, ../scss/position.scss */
+.position, .static, .relative, .absolute1, .absolute2, .relative-absolute-con, .absolute3, .fixed {
+  line-height: 40px;
+  width: 70%;
+  height: 40px;
+  padding: 0 3%;
+}
+
+/* line 13, ../scss/position.scss */
+.static {
+  top: 50%;
+  /*设置无效*/
+  background-color: #008000;
+  margin: 0 auto 0 auto;
+}
+
+/* line 21, ../scss/position.scss */
+.relative {
+  position: relative;
+  left: 50%;
+  height: 40px;
+  color: #fff;
+  background-color: #800072;
+  margin: 0 0 0 -38%;
+}
+
+/**
+* 无top或bottom 设置
+*/
+/* line 36, ../scss/position.scss */
+.absolute1 {
+  position: absolute;
+  left: 50%;
+  color: #fff;
+  background-color: #c70808;
+  margin: 0 0 0 -38%;
+}
+
+/**
+* 有top或bottom 设置
+*/
+/* line 49, ../scss/position.scss */
+.absolute2 {
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  color: #fff;
+  background-color: #0404bf;
+  margin: 0 0 0 -38%;
+}
+
+/* line 60, ../scss/position.scss */
+.relative-absolute-con {
+  position: relative;
+  top: 80px;
+  left: 50%;
+  height: 100px;
+  color: #fff;
+  background-color: #a5a50a;
+  margin: 0 0 0 -38%;
+}
+
+/* line 73, ../scss/position.scss */
+.absolute3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  background-color: #008000;
+  margin: -20px 0 0 -38%;
+}
+
+/* line 84, ../scss/position.scss */
+.fixed {
+  position: fixed;
+  z-index: 1000;
+  z-index: 0;
+  bottom: 0;
+  left: 50%;
+  color: #000;
+  background-color: #800072;
+  margin: -20px 0 0 -38%;
+}
+
+/* line 97, ../scss/position.scss */
+.z-index {
+  z-index: 1000;
+  bottom: 20px;
+}
+
+/* line 101, ../scss/position.scss */
+.clip {
+  clip: rect(0 auto 35px 10px);
+}

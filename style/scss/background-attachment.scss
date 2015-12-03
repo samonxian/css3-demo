@@ -1,0 +1,45 @@
+@charset 'UTF-8';
+@import 'same';
+body {
+    background-color: #fff;
+}
+h2 {
+    font-size: 18px;
+    line-height: 30px;
+}
+.bg {
+    width: 90%;
+    height: 122px;
+
+    background: url('../img/bg.png') no-repeat 0 0;
+}
+.one {
+    background-color: nth($bg-color,1);
+    background-size: auto;
+}
+.two {
+    background-color: nth($bg-color,2);
+    background-size: 150px 80px;;
+}
+.three {
+    background-color: nth($bg-color,3);
+    background-size: 80% 80%;
+}
+.four {
+    background-color: nth($bg-color,4);
+    background-size: 122px 50%;
+}
+.five {
+    background-color: nth($bg-color,5);
+    background-size: auto 50%;
+}
+.six {
+    background-color: nth($bg-color,1);
+    background-size: cover;
+}
+.seven {
+    height: 50px;
+
+    background-color: nth($bg-color,1);
+    background-size: contain;
+}

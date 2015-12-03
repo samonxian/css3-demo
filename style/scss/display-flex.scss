@@ -1,0 +1,125 @@
+@charset 'UTF-8';
+@import 'same';
+/**
+ * flex-flow : row 单行排列
+ * 子元素不设置width根据文字长度适应
+ * 当子元素width和小于父元素100%,width平均分配
+ */
+.flex1 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 100px;
+
+    background-color: nth($bg-color,1);
+
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;
+}
+.flex1 .row {
+    padding: 0 10px;
+
+    color: #fff;
+    border-right: 1px solid #ccc;
+}
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,自动换行
+ */
+.flex2 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 100px;
+
+    background-color: nth($bg-color,2);
+
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;//单行排列;
+}
+.flex2 .row {
+    width: 30%;
+
+    color: #fff;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,width平均分配
+ */
+.flex3 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 100px;
+
+    background-color: nth($bg-color,3);
+
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;
+}
+.flex3 .row {
+    width: 30%;
+
+    color: #fff;
+    border-right: 1px solid #ccc;
+}
+/**
+ * flex-flow : row 单行排列
+ * 子元素width和大于父元素100%,width平均分配
+ */
+.flex4 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 100px;
+
+    background-color: nth($bg-color,4);
+
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;
+}
+.flex4 .row {
+    color: #fff;
+    border-right: 1px solid #ccc;
+}
+.flex4 .row1 {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.flex4 .row2 {
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.flex4 .row3 {
+    width: 60%;
+}
+.flex4 .row4 {
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+}
+.flex5 {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    height: 100px;
+
+    background-color: nth($bg-color,5);
+
+    -webkit-flex-flow: row;
+        -ms-flex-flow: row;
+            flex-flow: row;//单行排列;  
+}

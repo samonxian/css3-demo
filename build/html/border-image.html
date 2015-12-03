@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="Description" content="css3属性大全，css3属性解说" />
+		<meta name="Keywords" content="css3,border" />
+		
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>border</title>
+		<meta name="author" content="Sam,xianshannan@qq.com" />
+		<style>@charset "UTF-8";h1,h2{text-align:left}.display-con,h2{line-height:40px}.border-image-repeat,.border-image-round,.border-image-stretch{border:27px solid #000;border-image-source:url(http://img.xiaoho.com/2014/09/border.png);border-image-slice:27 27 27 27}@media screen and (max-width:319px){html{font-size:85.33px}}@media screen and (min-width:320px) and (max-width:359px){html{font-size:85.33px}}@media screen and (min-width:360px) and (max-width:374px){html{font-size:96px}}@media screen and (min-width:375px) and (max-width:383px){html{font-size:100px}}@media screen and (min-width:384px) and (max-width:399px){html{font-size:102.4px}}@media screen and (min-width:400px) and (max-width:413px){html{font-size:106.67px}}@media screen and (min-width:414px){html{font-size:110.4px}}body,html{margin:0;padding:0}body{font-size:16px;height:1500px;color:#fff;background-color:#fff}.im-com,h1,h2{color:#000}div{z-index:10;overflow-x:auto;white-space:nowrap}h1{height:20px;padding:0}h2{height:40px;margin:5px 0 0;padding:5px 0}.display-con{width:90%;margin:auto;text-align:center}.im-com{font-size:13px;width:80%;height:81px;margin:20px auto auto;white-space:normal}.border-image-stretch{border-image-repeat:stretch}.border-image-repeat{border-image-repeat:repeat}.border-image-round{border-image-repeat:round}.margin_auto{margin:auto}.border-image-outset-width{width:60%}.border-image-outset{margin-top:70px;border-image-outset:27px 27px 27px 27px}</style>
+	</head>
+	<body>
+		<div class="display-con">
+			<h2>border-image-repeat：</h2>
+			<div class="type_one">
+				<div class=" im-com border-image-stretch">
+					背景图片拉伸stretch，默认值（拉伸不变形可用实用）
+				</div>
+				<div class=" im-com border-image-repeat">
+					背景图片重复repeat（有时候达不到想要的效果）
+				</div>
+				<div class=" im-com border-image-round">
+					背景图片环绕round（这个更实用）
+				</div>
+			</div>
+			<h2>border-image-outset：</h2>
+			<div class="type_one">
+				
+				<div class=" im-com border-image-round border-image-outset-width margin_auto">
+					无outset参考
+				</div>
+				<div class=" im-com border-image-round border-image-outset-width border-image-outset margin_auto">
+					设置outset后 原来的margin和padding都是还是存在，在此基础上ouset
+				</div>
+				<div class=" im-com border-image-round border-image-outset-width border-image-outset">
+					设置outset后 如果宽度和高度大于父元素，会不可见
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

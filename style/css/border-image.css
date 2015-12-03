@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@media screen and (max-width: 319px) {
+  /* line 6, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  /* line 12, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  /* line 18, ../scss/_same.scss */
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  /* line 24, ../scss/_same.scss */
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  /* line 30, ../scss/_same.scss */
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  /* line 36, ../scss/_same.scss */
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  /* line 42, ../scss/_same.scss */
+  html {
+    font-size: 110.4px;
+  }
+}
+/* line 47, ../scss/_same.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 52, ../scss/_same.scss */
+body {
+  font-size: 16px;
+  height: 1500px;
+  color: #fff;
+  background-color: #ccc;
+}
+
+/* line 60, ../scss/_same.scss */
+div {
+  z-index: 10;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* line 67, ../scss/_same.scss */
+h1 {
+  height: 20px;
+  padding: 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 75, ../scss/_same.scss */
+h2 {
+  line-height: 40px;
+  height: 40px;
+  margin: 5px 0 0 0;
+  padding: 5px 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 86, ../scss/_same.scss */
+.display-con {
+  line-height: 40px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 3, ../scss/border-image.scss */
+body {
+  background-color: #fff;
+}
+
+/* line 6, ../scss/border-image.scss */
+.im-com {
+  font-size: 13px;
+  width: 80%;
+  height: 81px;
+  margin: auto;
+  margin-top: 20px;
+  white-space: normal;
+  color: #000;
+}
+
+/*拉伸*/
+/* line 19, ../scss/border-image.scss */
+.border-image-stretch {
+  border: 27px solid #000;
+  border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
+  border-image-slice: 27 27 27 27;
+  border-image-repeat: stretch;
+}
+
+/*重复*/
+/* line 26, ../scss/border-image.scss */
+.border-image-repeat {
+  border: 27px solid #000;
+  border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
+  border-image-slice: 27 27 27 27;
+  border-image-repeat: repeat;
+}
+
+/*环绕*/
+/* line 33, ../scss/border-image.scss */
+.border-image-round {
+  border: 27px solid #000;
+  border-image-source: url(http://img.xiaoho.com/2014/09/border.png);
+  border-image-slice: 27 27 27 27;
+  border-image-repeat: round;
+}
+
+/* line 39, ../scss/border-image.scss */
+.margin_auto {
+  margin: auto;
+}
+
+/* line 42, ../scss/border-image.scss */
+.border-image-outset-width {
+  width: 60%;
+}
+
+/* line 45, ../scss/border-image.scss */
+.border-image-outset {
+  margin-top: 70px;
+  border-image-outset: 27px 27px 27px 27px;
+}

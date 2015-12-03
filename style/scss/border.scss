@@ -1,0 +1,51 @@
+@charset 'UTF-8';
+@import 'same';
+
+.border-con {
+    line-height: 20px;
+
+    height: 50px;
+    margin-bottom: 5px;
+    padding: 0 3%;
+    padding-top: 10px;
+
+    text-align: left;
+
+    border: 1px solid $useless;
+}
+.one {
+    background-color: nth($bg-color,1);
+}
+.two {
+    background-color: nth($bg-color,2);
+}
+.three {
+    background-color: nth($bg-color,3);
+}
+.four {
+    background-color: nth($bg-color,4);
+}
+.type_one .one {
+    border-radius: 10px;
+}
+.type_one .two {
+    border-radius: 10px 20px;
+}
+.type_one .three {
+    border-radius: 10px 20px 30px;
+}
+.type_one .four {
+    border-radius: 10px 20px 30px 40px;
+}
+.type_two .one {
+    border-radius: 10px/5px;
+}
+.type_two .two {
+    border-radius: 10px 20px/5px 10px;
+}
+.type_two .three {
+    border-radius: 10px 20px 30px/5px 10px 15px;
+}
+.type_two .four {
+    border-radius: 10px 20px 30px 40px/5px 10px 15px 20px;
+}

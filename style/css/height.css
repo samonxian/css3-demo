@@ -1,0 +1,149 @@
+@media screen and (max-width: 319px) {
+  /* line 6, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  /* line 12, ../scss/_same.scss */
+  html {
+    font-size: 85.33333px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  /* line 18, ../scss/_same.scss */
+  html {
+    font-size: 96px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 383px) {
+  /* line 24, ../scss/_same.scss */
+  html {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 384px) and (max-width: 399px) {
+  /* line 30, ../scss/_same.scss */
+  html {
+    font-size: 102.4px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 413px) {
+  /* line 36, ../scss/_same.scss */
+  html {
+    font-size: 106.66667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  /* line 42, ../scss/_same.scss */
+  html {
+    font-size: 110.4px;
+  }
+}
+/* line 47, ../scss/_same.scss */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 52, ../scss/_same.scss */
+body {
+  font-size: 16px;
+  height: 1500px;
+  color: #fff;
+  background-color: #ccc;
+}
+
+/* line 60, ../scss/_same.scss */
+div {
+  z-index: 10;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* line 67, ../scss/_same.scss */
+h1 {
+  height: 20px;
+  padding: 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 75, ../scss/_same.scss */
+h2 {
+  line-height: 40px;
+  height: 40px;
+  margin: 5px 0 0 0;
+  padding: 5px 0;
+  text-align: left;
+  color: #000;
+}
+
+/* line 86, ../scss/_same.scss */
+.display-con {
+  line-height: 40px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+/* line 5, ../scss/height.scss */
+.display, .none-con, .block, .inline, .inline-block, .run-in, .flex {
+  height: 40px;
+  padding: 0 3%;
+}
+
+/* line 9, ../scss/height.scss */
+.display-con {
+  width: 70%;
+  margin: auto;
+}
+
+/* line 13, ../scss/height.scss */
+.none-con {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 19, ../scss/height.scss */
+.none {
+  display: none;
+}
+
+/* line 22, ../scss/height.scss */
+.block {
+  display: block;
+  color: #fff;
+  background-color: #f00;
+}
+
+/* line 30, ../scss/height.scss */
+.inline {
+  display: inline;
+  color: #fff;
+  background-color: #008000;
+}
+
+/* line 38, ../scss/height.scss */
+.inline-block {
+  display: inline-block;
+  color: #fff;
+  background-color: #00f;
+}
+
+/* line 46, ../scss/height.scss */
+.run-in {
+  display: run-in;
+  color: #000;
+  background-color: #ff0;
+}
+
+/* line 54, ../scss/height.scss */
+.flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  background-color: #000;
+}
