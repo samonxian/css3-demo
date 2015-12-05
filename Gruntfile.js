@@ -76,7 +76,7 @@ module.exports = function(grunt){
 				expand: true,
 				cwd: 'src/',
 				src: ['**/*.html'],
-				dest: 'temp_html/html/',
+				dest: 'temp/html/',
 				flatten: true,
 				filter: 'isFile',
 			},
@@ -99,9 +99,9 @@ module.exports = function(grunt){
 			replace_css : {
 				files: [{
 					expand: true,
-					cwd: 'temp_html/',
+					cwd: 'temp/',
 					src: ['html/**/*.html'],
-					dest: 'build/',
+					dest: 'temp_html/',
 				}],
 				options: {
 					replacements: [{
@@ -125,7 +125,7 @@ module.exports = function(grunt){
 			target: {
 				files: [{
 					expand: true,
-					cwd: 'temp_build/',
+					cwd: 'temp_html/',
 					src: ['**/*.html'],
 					dest: 'build/',
 				}]
